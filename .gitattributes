@@ -1,4 +1,6 @@
 * text=auto eol=lf
 *.{cmd,bat,ps1} text eol=crlf
+**/mvnw text eol=lf
 *.{png,jpg,jpeg,gif,webp,svg,ico} binary
 *.zip binary
+*.jar binary
