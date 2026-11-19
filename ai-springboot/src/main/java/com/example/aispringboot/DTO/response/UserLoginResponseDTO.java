@@ -1,13 +1,16 @@
 package com.example.aispringboot.DTO.response;
 
+import lombok.Builder;
 import lombok.Data;
+
+import java.time.LocalDate;
 
 @Data
 public class UserLoginResponseDTO {
     private String token;
     private String roleType;
     private UserDetailResponseDTO userInfo;
-
+    @Builder
     @Data
     public static class UserDetailResponseDTO {
         private Long id;
@@ -18,7 +21,7 @@ public class UserLoginResponseDTO {
         private String phone;
         private Integer gender;
         private String genderDisplayName;
-        private String birthday;
+        private LocalDate birthday;
         private Integer userType;
         private String userTypeDisplayName;
         private Integer status;

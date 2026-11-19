@@ -22,6 +22,6 @@ public class User {
         System.out.println(commandDTO.getPassword());
         Result<UserLoginResponseDTO> result = userService.login(commandDTO);
         System.out.println(result);
-        return null;
+        return result;
     }
 }

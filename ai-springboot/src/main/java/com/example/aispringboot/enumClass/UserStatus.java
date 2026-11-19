@@ -3,7 +3,7 @@ package com.example.aispringboot.enumClass;
 import lombok.Getter;
 
 @Getter
-public enum UserStates {
+public enum UserStatus {
     DISABLED(0, "禁用"),
     NORMAL(1, "正常");
 
